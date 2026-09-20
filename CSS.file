@@ -1,0 +1,871 @@
+/* =========================================
+   ARTIST ACCOUNT
+========================================= */
+
+.artist-account {
+    --artist-red: #ff1738;
+    --artist-red-light: #ff304d;
+    --artist-red-dark: #790516;
+
+    --artist-black: #050505;
+    --artist-card: #0d0d0d;
+    --artist-card-2: #111111;
+
+    --artist-white: #f5f5f5;
+    --artist-gray: #909090;
+    --artist-border: rgba(255,255,255,0.08);
+
+    width: 100%;
+    max-width: 760px;
+
+    margin: 0 auto;
+    padding: 30px;
+
+    color: var(--artist-white);
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: var(--artist-black);
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.artist-account__header {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    min-height: 190px;
+
+    padding: 28px 35px;
+
+    overflow: hidden;
+
+    border-radius: 30px;
+
+    border: 1px solid rgba(255,23,56,.65);
+
+    background:
+        radial-gradient(
+            circle at 15% 50%,
+            rgba(255,23,56,.18),
+            transparent 35%
+        ),
+        linear-gradient(
+            130deg,
+            #0d0d0d,
+            #080808
+        );
+
+    box-shadow:
+        0 0 40px rgba(255,23,56,.07),
+        inset 0 0 40px rgba(255,23,56,.025);
+}
+
+
+/* luce decorativa */
+
+.artist-account__header::after {
+    content: "";
+
+    position: absolute;
+
+    width: 480px;
+    height: 230px;
+
+    right: -120px;
+    top: -120px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            130deg,
+            transparent 30%,
+            rgba(255,0,35,.22)
+        );
+
+    transform: rotate(-15deg);
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   AVATAR
+========================================= */
+
+.artist-account__avatar {
+    position: relative;
+
+    width: 125px;
+    height: 125px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle at 35% 30%,
+            #ff4a5c,
+            #ff1738 45%,
+            #850818
+        );
+
+    border: 2px solid var(--artist-red);
+
+    box-shadow:
+        0 0 25px rgba(255,23,56,.55),
+        0 0 0 8px rgba(255,23,56,.04);
+
+    z-index: 2;
+}
+
+.artist-account__avatar::before {
+    content: "";
+
+    position: absolute;
+
+    inset: -9px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,23,56,.35);
+}
+
+.artist-account__avatar span {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   IDENTITY
+========================================= */
+
+.artist-account__identity {
+    margin-left: 30px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.artist-account__identity h2 {
+    margin: 0 0 9px;
+
+    font-size: 42px;
+    line-height: 1;
+
+    letter-spacing: -1px;
+}
+
+.artist-account__status {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: var(--artist-gray);
+
+    font-size: 17px;
+}
+
+.artist-account__status span {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: var(--artist-red);
+
+    box-shadow: 0 0 12px var(--artist-red);
+}
+
+
+/* =========================================
+   SETTINGS ICON
+========================================= */
+
+.artist-account__settings {
+    position: absolute;
+
+    top: 25px;
+    right: 27px;
+
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    z-index: 3;
+}
+
+.artist-account__settings svg {
+    width: 27px;
+    height: 27px;
+
+    fill: none;
+
+    stroke: var(--artist-red);
+    stroke-width: 1.6;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/* =========================================
+   PROFILO
+========================================= */
+
+.artist-account__profile-card {
+    width: 100%;
+
+    margin-top: 25px;
+
+    min-height: 115px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 20px 28px;
+
+    color: white;
+
+    border: 1px solid rgba(255,255,255,.09);
+
+    border-radius: 26px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #111111,
+            #0a0a0a
+        );
+
+    cursor: pointer;
+
+    text-align: left;
+
+    transition: .25s ease;
+}
+
+.artist-account__profile-card:hover {
+    border-color: rgba(255,23,56,.45);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.35);
+}
+
+
+/* =========================================
+   ICONA PROFILO
+========================================= */
+
+.artist-account__profile-icon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 19px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,23,56,.2),
+            rgba(90,0,10,.12)
+        );
+
+    border: 1px solid rgba(255,23,56,.25);
+}
+
+.artist-account__profile-icon svg {
+    width: 34px;
+    height: 34px;
+
+    fill: none;
+
+    stroke: var(--artist-red);
+    stroke-width: 1.8;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/* =========================================
+   TESTO
+========================================= */
+
+.artist-account__item-content {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 24px;
+
+    flex: 1;
+
+    gap: 5px;
+}
+
+.artist-account__item-content strong {
+    font-size: 20px;
+}
+
+.artist-account__item-content span {
+    color: var(--artist-gray);
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   FRECCE
+========================================= */
+
+.artist-account__arrow {
+    width: 25px;
+    height: 25px;
+
+    flex-shrink: 0;
+
+    fill: none;
+
+    stroke: #777;
+    stroke-width: 1.7;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    transition: .2s;
+}
+
+button:hover .artist-account__arrow {
+    stroke: var(--artist-red);
+
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.artist-account__section-heading {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 40px 3px 18px;
+}
+
+.artist-account__heading-icon {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.artist-account__heading-icon svg {
+    width: 28px;
+    height: 28px;
+
+    fill: none;
+
+    stroke: var(--artist-red);
+    stroke-width: 2;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.artist-account__section-heading h3 {
+    margin: 0 0 4px;
+
+    font-size: 20px;
+}
+
+.artist-account__section-heading p {
+    margin: 0;
+
+    color: var(--artist-gray);
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   SOCIAL GRID
+========================================= */
+
+.artist-account__social-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 14px;
+}
+
+
+/* =========================================
+   SOCIAL CARD
+========================================= */
+
+.artist-account__social-card {
+    min-height: 170px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 20px;
+
+    color: white;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #111111,
+            #080808
+        );
+
+    cursor: pointer;
+
+    text-align: left;
+
+    transition: .25s ease;
+}
+
+.artist-account__social-card:hover {
+    border-color: rgba(255,23,56,.4);
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.35);
+}
+
+
+/* =========================================
+   SOCIAL ICON
+========================================= */
+
+.artist-account__social-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 17px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,23,56,.23),
+            rgba(100,0,10,.1)
+        );
+
+    border: 1px solid rgba(255,23,56,.25);
+}
+
+.artist-account__social-icon svg {
+    width: 31px;
+    height: 31px;
+
+    fill: none;
+
+    stroke: var(--artist-red);
+    stroke-width: 1.8;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.artist-account__social-icon svg .artist-account__dot {
+    fill: var(--artist-red);
+    stroke: none;
+}
+
+
+/* youtube */
+
+.artist-account__social-icon svg rect {
+    fill: none;
+}
+
+.artist-account__social-card:nth-child(2)
+.artist-account__social-icon svg rect {
+    fill: var(--artist-red);
+    stroke: var(--artist-red);
+}
+
+.artist-account__social-card:nth-child(2)
+.artist-account__social-icon svg path {
+    fill: #080808;
+    stroke: none;
+}
+
+
+/* =========================================
+   SOCIAL TEXT
+========================================= */
+
+.artist-account__social-card strong {
+    margin-bottom: 6px;
+
+    font-size: 17px;
+}
+
+.artist-account__social-card span {
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+
+    color: #888;
+
+    font-size: 13px;
+}
+
+.artist-account__social-card span i {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: var(--artist-red);
+
+    box-shadow: 0 0 7px rgba(255,23,56,.6);
+}
+
+
+/* =========================================
+   SETTINGS BOX
+========================================= */
+
+.artist-account__settings-box {
+    margin-top: 35px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 27px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #111111,
+            #080808
+        );
+}
+
+
+/* =========================================
+   SETTING
+========================================= */
+
+.artist-account__setting {
+    width: 100%;
+
+    min-height: 105px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 18px 25px;
+
+    color: white;
+
+    border: 0;
+
+    border-bottom: 1px solid rgba(255,255,255,.07);
+
+    background: transparent;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    transition: .2s;
+}
+
+.artist-account__setting:last-child {
+    border-bottom: 0;
+}
+
+.artist-account__setting:hover {
+    background: rgba(255,23,56,.045);
+}
+
+
+/* =========================================
+   SETTING ICON
+========================================= */
+
+.artist-account__setting-icon {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    margin-right: 22px;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,23,56,.2),
+            rgba(80,0,10,.1)
+        );
+
+    border: 1px solid rgba(255,23,56,.22);
+}
+
+.artist-account__setting-icon svg {
+    width: 29px;
+    height: 29px;
+
+    fill: none;
+
+    stroke: var(--artist-red);
+    stroke-width: 1.8;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/* =========================================
+   SETTING TEXT
+========================================= */
+
+.artist-account__setting > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+
+    flex: 1;
+}
+
+.artist-account__setting strong {
+    font-size: 18px;
+}
+
+.artist-account__setting span {
+    color: var(--artist-gray);
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   LOGOUT
+========================================= */
+
+.artist-account__logout {
+    position: relative;
+}
+
+.artist-account__logout .artist-account__setting-icon {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,23,56,.3),
+            rgba(100,0,10,.12)
+        );
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .artist-account {
+        padding: 18px 15px 35px;
+    }
+
+    .artist-account__header {
+        min-height: 155px;
+
+        padding: 20px;
+
+        border-radius: 23px;
+    }
+
+    .artist-account__avatar {
+        width: 92px;
+        height: 92px;
+    }
+
+    .artist-account__avatar span {
+        font-size: 38px;
+    }
+
+    .artist-account__identity {
+        margin-left: 18px;
+    }
+
+    .artist-account__identity h2 {
+        font-size: 30px;
+    }
+
+    .artist-account__status {
+        font-size: 14px;
+    }
+
+    .artist-account__settings {
+        top: 16px;
+        right: 15px;
+    }
+
+    .artist-account__profile-card {
+        min-height: 95px;
+
+        padding: 17px;
+
+        border-radius: 21px;
+    }
+
+    .artist-account__profile-icon {
+        width: 54px;
+        height: 54px;
+    }
+
+    .artist-account__item-content {
+        margin-left: 16px;
+    }
+
+    .artist-account__item-content strong {
+        font-size: 17px;
+    }
+
+    .artist-account__item-content span {
+        font-size: 13px;
+    }
+
+    .artist-account__section-heading {
+        margin-top: 30px;
+    }
+
+    .artist-account__social-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .artist-account__social-card {
+        min-height: 150px;
+
+        padding: 16px;
+    }
+
+    .artist-account__social-card:last-child {
+        grid-column: 1 / -1;
+
+        min-height: 105px;
+
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .artist-account__social-card:last-child
+    .artist-account__social-icon {
+        margin: 0 15px 0 0;
+    }
+
+    .artist-account__setting {
+        min-height: 88px;
+
+        padding: 14px 16px;
+    }
+
+    .artist-account__setting-icon {
+        width: 50px;
+        height: 50px;
+
+        margin-right: 15px;
+    }
+
+    .artist-account__setting strong {
+        font-size: 16px;
+    }
+
+    .artist-account__setting span {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================
+   EXTRA SMALL
+========================================= */
+
+@media (max-width: 390px) {
+
+    .artist-account__header {
+        padding: 16px;
+    }
+
+    .artist-account__avatar {
+        width: 78px;
+        height: 78px;
+    }
+
+    .artist-account__avatar span {
+        font-size: 32px;
+    }
+
+    .artist-account__identity h2 {
+        font-size: 27px;
+    }
+
+    .artist-account__social-grid {
+        gap: 9px;
+    }
+
+    .artist-account__social-card {
+        padding: 13px;
+    }
+}
