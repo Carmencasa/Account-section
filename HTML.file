@@ -1,0 +1,203 @@
+<section class="artist-account">
+
+    <!-- HEADER ACCOUNT -->
+    <div class="artist-account__header">
+
+        <div class="artist-account__avatar">
+            <span>A</span>
+        </div>
+
+        <div class="artist-account__identity">
+            <h2>amo</h2>
+
+            <div class="artist-account__status">
+                <span></span>
+                Account attivo
+            </div>
+        </div>
+
+        <button class="artist-account__settings" aria-label="Impostazioni">
+            <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06-1.7 1.7-.06-.06a1.7 1.7 0 0 0-1.88-.34 1.7 1.7 0 0 0-1.03 1.56V20h-2.4v-.2a1.7 1.7 0 0 0-1.03-1.56 1.7 1.7 0 0 0-1.88.34l-.06.06-1.7-1.7.06-.06A1.7 1.7 0 0 0 8.46 15a1.7 1.7 0 0 0-1.56-1.03H6.7v-2.4h.2A1.7 1.7 0 0 0 8.46 10a1.7 1.7 0 0 0-.34-1.88l-.06-.06 1.7-1.7.06.06A1.7 1.7 0 0 0 11.7 6.08 1.7 1.7 0 0 0 12.73 4.5v-.2h2.4v.2A1.7 1.7 0 0 0 16.16 6a1.7 1.7 0 0 0 1.88.34l.06-.06 1.7 1.7-.06.06A1.7 1.7 0 0 0 19.4 10a1.7 1.7 0 0 0 1.56 1.03h.2v2.4h-.2A1.7 1.7 0 0 0 19.4 15z"></path>
+            </svg>
+        </button>
+
+    </div>
+
+
+    <!-- PROFILO PUBBLICO -->
+    <button class="artist-account__profile-card">
+
+        <div class="artist-account__profile-icon">
+            <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="8" r="3.2"></circle>
+                <path d="M5 20c.5-3.4 3-5.5 7-5.5s6.5 2.1 7 5.5"></path>
+            </svg>
+        </div>
+
+        <div class="artist-account__item-content">
+            <strong>Mostra profilo</strong>
+            <span>Il tuo profilo pubblico</span>
+        </div>
+
+        <svg class="artist-account__arrow" viewBox="0 0 24 24">
+            <path d="M9 5l7 7-7 7"></path>
+        </svg>
+
+    </button>
+
+
+    <!-- SOCIAL -->
+    <div class="artist-account__section-heading">
+        <div class="artist-account__heading-icon">
+            <svg viewBox="0 0 24 24">
+                <path d="M10 13a5 5 0 0 0 7.1.1l2-2a5 5 0 0 0-7.1-7.1l-1.2 1.2"></path>
+                <path d="M14 11a5 5 0 0 0-7.1-.1l-2 2A5 5 0 0 0 12 20l1.2-1.2"></path>
+            </svg>
+        </div>
+
+        <div>
+            <h3>Account collegati</h3>
+            <p>Connetti i tuoi servizi</p>
+        </div>
+    </div>
+
+
+    <!-- SOCIAL GRID -->
+    <div class="artist-account__social-grid">
+
+        <!-- INSTAGRAM -->
+        <button class="artist-account__social-card">
+
+            <div class="artist-account__social-icon">
+                <svg viewBox="0 0 24 24">
+                    <rect x="3.5" y="3.5" width="17" height="17" rx="5"></rect>
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <circle class="artist-account__dot" cx="17.3" cy="6.8" r="1"></circle>
+                </svg>
+            </div>
+
+            <strong>Instagram</strong>
+            <span>
+                <i></i>
+                Collega
+            </span>
+
+        </button>
+
+
+        <!-- YOUTUBE -->
+        <button class="artist-account__social-card">
+
+            <div class="artist-account__social-icon">
+                <svg viewBox="0 0 24 24">
+                    <rect x="2.5" y="6" width="19" height="12" rx="4"></rect>
+                    <path d="M10 9l5 3-5 3z"></path>
+                </svg>
+            </div>
+
+            <strong>YouTube</strong>
+            <span>
+                <i></i>
+                Collega
+            </span>
+
+        </button>
+
+
+        <!-- FILE -->
+        <button class="artist-account__social-card">
+
+            <div class="artist-account__social-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M5 18a4 4 0 0 1 1.2-7.8A6 6 0 0 1 18 11a3.5 3.5 0 0 1 1 6.8"></path>
+                    <path d="M12 10v8"></path>
+                    <path d="M9 13l3-3 3 3"></path>
+                </svg>
+            </div>
+
+            <strong>I tuoi file</strong>
+            <span>
+                <i></i>
+                Collegato
+            </span>
+
+        </button>
+
+    </div>
+
+
+    <!-- IMPOSTAZIONI -->
+    <div class="artist-account__settings-box">
+
+        <!-- FILE -->
+        <button class="artist-account__setting">
+
+            <div class="artist-account__setting-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M5 18a4 4 0 0 1 1.2-7.8A6 6 0 0 1 18 11a3.5 3.5 0 0 1 1 6.8"></path>
+                    <path d="M12 10v8"></path>
+                    <path d="M9 13l3-3 3 3"></path>
+                </svg>
+            </div>
+
+            <div>
+                <strong>Spazio e file</strong>
+                <span>Cloud, upload e spazio utilizzato</span>
+            </div>
+
+            <svg class="artist-account__arrow" viewBox="0 0 24 24">
+                <path d="M9 5l7 7-7 7"></path>
+            </svg>
+
+        </button>
+
+
+        <!-- ACCOUNT -->
+        <button class="artist-account__setting">
+
+            <div class="artist-account__setting-icon">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M19 13.5v-3l-2-.6a6.5 6.5 0 0 0-.8-1.4l.8-1.9-2.1-2.1-1.9.8a6.5 6.5 0 0 0-1.4-.8L11 2.5H8l-.6 2a6.5 6.5 0 0 0-1.4.8l-1.9-.8L2 6.6l.8 1.9a6.5 6.5 0 0 0-.8 1.4l-2 .6v3l2 .6c.2.5.4 1 .8 1.4L2 17.4l2.1 2.1 1.9-.8c.4.3.9.6 1.4.8l.6 2h3l.6-2c.5-.2 1-.4 1.4-.8l1.9.8 2.1-2.1-.8-1.9c.3-.4.6-.9.8-1.4z"></path>
+                </svg>
+            </div>
+
+            <div>
+                <strong>Account</strong>
+                <span>Sicurezza, dispositivi e dati</span>
+            </div>
+
+            <svg class="artist-account__arrow" viewBox="0 0 24 24">
+                <path d="M9 5l7 7-7 7"></path>
+            </svg>
+
+        </button>
+
+
+        <!-- ESci -->
+        <button class="artist-account__setting artist-account__logout">
+
+            <div class="artist-account__setting-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M10 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h5"></path>
+                    <path d="M14 8l4 4-4 4"></path>
+                    <path d="M9 12h9"></path>
+                </svg>
+            </div>
+
+            <div>
+                <strong>Esci</strong>
+                <span>Chiudi la sessione su questo browser</span>
+            </div>
+
+            <svg class="artist-account__arrow" viewBox="0 0 24 24">
+                <path d="M9 5l7 7-7 7"></path>
+            </svg>
+
+        </button>
+
+    </div>
+
+</section>
